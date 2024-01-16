@@ -7,7 +7,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('River App')),
+      appBar: AppBar(title: const Text('Riverpod App')),
       body: const HomeViewWidget(),
     );
   }
@@ -23,6 +23,14 @@ class HomeViewWidget extends StatelessWidget {
         _CustomListTileWidget(title: 'Future Provider', subTitle: 'Un simple Future + Family', location: '/future-provider'),
         _CustomListTileWidget(title: 'Stream Provider', subTitle: 'Un simple Stream', location: '/stream-provider'),
         _CustomListTileWidget(title: 'Notifier Provider', subTitle: 'Un provider con estado personalizado', location: '/state-notifier-provider'),
+        // Riverpod annotations
+        _CustomListTileWidget(title: '@ Provider', subTitle: 'Un provider con anotaciones', location: '/@provider'),
+        _CustomListTileWidget(title: '@ Go Router', subTitle: 'Un provider con anotaciones', location: '/@router'),
+        _CustomListTileWidget(title: '@ State Provider', subTitle: 'Un provider con anotaciones', location: '/@state_provider'),
+        _CustomListTileWidget(title: '@ Todos Provider', subTitle: 'Un provider con anotaciones', location: '/@todos'),
+        _CustomListTileWidget(title: '@ Future Provider', subTitle: 'Un provider con anotaciones', location: '/@future-prodiver'),
+        _CustomListTileWidget(title: '@ Family Future Provider', subTitle: 'Un provider con anotaciones', location: '/@family-future-prodiver'),
+        _CustomListTileWidget(title: '@ Stream Provider', subTitle: 'Un provider con anotaciones', location: '/@stream-prodiver'),
       ],
     );
   }
