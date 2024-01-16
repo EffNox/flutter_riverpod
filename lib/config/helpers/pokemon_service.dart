@@ -6,7 +6,7 @@ class PokemonService {
     // await Future.delayed(const Duration(seconds: 2));
     try {
       final rs = await dio.get('https://pokeapi.co/api/v2/pokemon/$pokemonId');
-      print('$pokemonId ${rs.data['name'] ?? ''}');
+      // print('$pokemonId ${rs.data['name'] ?? ''}');
       return rs.data['name'] ?? '';
     } catch (e) {
       throw 'Name not found';
